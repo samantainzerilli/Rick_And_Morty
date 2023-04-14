@@ -1,0 +1,54 @@
+.contenedor {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img4.png');
+    background-position: center center;
+    background-size: 40vh;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  
+  .contenedor::after {
+    content: ""; 
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('./img3.png');
+    background-position: center center;
+    background-size: 40vh;
+    background-repeat: no-repeat;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  .formulario {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-top: -10px;
+  }
+  
+  .boton {
+    background-color: rgb(62, 245, 37);
+    color: rgb(21, 21, 66);
+    border: transparent;
+    border-radius: .5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+  }

@@ -52,3 +52,11 @@
     padding: .5rem 1.5rem;
     cursor: pointer;
   }
+
+  input[type="text"], input[type="password"] {
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+  }

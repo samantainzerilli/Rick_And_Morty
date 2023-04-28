@@ -1,0 +1,9 @@
+.color{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+}
+

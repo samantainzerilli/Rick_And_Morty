@@ -1,5 +1,6 @@
 import { useState } from "react";
-import style from './SearchBar.module.css'
+import style from './SearchBar.module.css';
+import { MdSearch } from 'react-icons/md';
 
 export default function SearchBar({onSearch}) {
    const [id, setId]=useState('')
@@ -8,8 +9,10 @@ export default function SearchBar({onSearch}) {
    }
    return (
       <div>
-         <input type='search' value={id} onChange={handleChange} />
-         <button className={style.boton} onClick={()=> {onSearch(id); setId('')} }>Agregar</button>
+         <input className={style.contenedor} type='search' value={id} onChange={handleChange} />
+         <button className={style.boton} onClick={()=> {onSearch(id); setId('')} }>
+  <MdSearch className={style.icono} />
+</button>
       </div>
    );
 }

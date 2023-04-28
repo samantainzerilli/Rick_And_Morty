@@ -1,5 +1,5 @@
 .boton{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: transparent;
     border-radius: .8rem;
     font-weight: bold;
@@ -7,5 +7,41 @@
     padding: .3rem 1.5rem;
     cursor: pointer;
     margin-right: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color:black;
+    position: relative;
+    top: -80px;
+  }
+  .boton a {
+    text-decoration: none !important;
+  }
+  
+  
+.boton:hover {
+  background-color: rgb(22, 255, 26);
+  
+}
+
+  .barraLateral {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 350px;
+    background-image: url('./12345a.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1; 
+  }
+  
+  .contenedorBotones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
